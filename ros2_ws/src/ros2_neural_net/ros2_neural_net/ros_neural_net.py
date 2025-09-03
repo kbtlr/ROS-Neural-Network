@@ -9,7 +9,8 @@ class NeuralNetController(Node):
         self.create_timer(0.5, self.timer_callback)
         self.toggle = True
         self.get_logger().info("ros_neural_net started.")
-
+    
+    ## Placeholder code: Finished neural network will go here. Results published to rViz
     def timer_callback(self):
         msg = Twist()
         msg.linear.x = 0.2 if self.toggle else 0.0
